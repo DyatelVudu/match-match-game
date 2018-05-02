@@ -220,9 +220,9 @@ footer {
     font-size: 14px;
     color: #333;
 	width: 620px;
-    max-height: 320px;
+    max-height: 390px;
 	position: relative;
-	margin: 10% auto;
+	margin: 100px auto;
 	padding: 5px 20px 13px 20px;
 	background: #fff;
     background: linear-gradient(45deg, #deddc3, #424b4e);
@@ -286,6 +286,38 @@ ul li{
 }
 .modalDialog > section .choose_back[value="6"]{
     background-image: url("../media/img/back/card_back_6.gif");
+}
+
+.modalDialog form{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.modalDialog form input{
+    display: block;
+    border: 0;
+    padding: 10px 13px;
+    margin: 10px 0;
+    width: inherit;
+}
+.modalDialog table{
+    width: 100%;
+    border: 2px solid #333;
+    text-align: center;
+    border-collapse: collapse;
+}
+.modalDialog table tbody tr td{
+    border-top: 1px dotted #333;
+    border-bottom: 1px dotted #333;
+    padding: 7px 3px;
+}
+.modalDialog table tbody tr td:first-child{
+    width: 50px;
+}
+.modalDialog table tbody tr td:nth-child(3),
+.modalDialog table tbody tr td:nth-child(4){
+    width: 150px;
 }
 /*Animation*/
 

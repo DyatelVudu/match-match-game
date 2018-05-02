@@ -43,6 +43,16 @@
                     <li>The game continues in this fashion until all the cards are played.</li>
                 </ul>
             </ul>
+            <a href="#scorePage" class="btn" id="scoreBtn">Score</a>
+            <h3>Select your data</h3>
+            <form>
+                <label for="">First name</label>
+                <input type="text" class="inputName" id="inputFName" placeholder="First name">
+                <label>Last name</label>
+                <input type="text" class="inputName" id="inputLName" placeholder="Last name">
+                <label>Email</label>
+                <input type="email" class="inputName" id="inputEmail" placeholder="Email">
+            </form>
             <h3>Choose the difficulty</h3>
             <article class="size_article">
                 <button value="4" class="choose_size btn">8 x 3</button>
@@ -59,7 +69,7 @@
                 <button value="5" class="choose_back"></button>
                 <button value="6" class="choose_back"></button>
             </article>
-            <a href="#" title="Start" class="btn" id="startBtn">Start</a>
+            <a href="#" title="Start" class="btn startBtn" id="startBtn">Start</a>
         </section>
     </div>
     <div id="winPage" class="modalDialog">
@@ -69,7 +79,24 @@
             <a title="Start" id="playAgain" class="btn">Play again</a>
         </section>
     </div>
-    <script src="./dist/index.js"></script>
+    <div id="scorePage" class="modalDialog">
+        <section>
+            <h1>Score</h1>
+            <table class="score">
+                <thead>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Clicks</th>
+                    <th>Time</th>
+                </thead>
+                <tbody id="score"></tbody>
+            </table>
+            <a href="#startPage" title="Back" class="btn">Back</a>
+        </section>
+    </div>
+    <script src="./index.js"></script>
 
 
 </body>
